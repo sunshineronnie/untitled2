@@ -1,6 +1,7 @@
 package ru.skypro;
 
 import javax.swing.*;
+import java.util.Arrays;
 
 public class Main {
 
@@ -42,7 +43,46 @@ public class Main {
             }
         }
 
-        
+
+        double [] fractional = {1.57, 7.654, 9.986};
+        for (double f = 0; f < fractional.length; f++) {
+            if (f == fractional.length - 1)
+                System.out.println(fractional [f]);
+            else
+                System.out.println(fractional[f] + ", ");
+
+        }
+
+        for (int f1 = fractional.length; f1 > 0; f1--) {
+            if (f1 == fractional.length - 1)
+                System.out.println(fractional[f1]);
+            else
+                System.out.println(fractional[f1] + ", ");
+
+
+            int [] myLine = new int[4];
+            myLine[0] = 6;
+            myLine[1] = 8;
+            myLine[2] = 10;
+            myLine[3] = 12;
+            for (int m = 0; m < myLine.length; m++) {
+                System.out.println(myLine[m] + ", ");
+
+                for (int m1 = myLine.length; m1 > 0; m1--) {
+                    System.out.println(myLine[m1]);
+
+                }
+
+
+            }
+
+
+
+        }
+
+
+
+
 
 
 
